@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/shield_picture"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".RegistrationActivity"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:text="Registration"
+            />
+        <!-- Name -->
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name, Surename"
+            android:minHeight="48dp"
+            />
+
+        <!-- Index -->
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/editTextIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Index"
+            android:minHeight="48dp" />
+
+        <!-- Birth Date -->
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/editTextBDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birth Date (YYYY-MM-DD)"
+            android:minHeight="48dp" />
+
+        <!-- Course -->
+        <EditText
+            android:maxLines="1"
+            android:id="@+id/editTextCourse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Course"
+            android:inputType="number"
+            android:minHeight="48dp" />
+        <!-- Password -->
+        <EditText
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp" />
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/button_registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register" />
+        <RelativeLayout
+            android:layout_width="75dp"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/singin_button"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SING IN"
+                android:textSize="20dp"
+                android:textColor="@color/violet_1"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_below="@id/singin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="@color/violet_1"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
